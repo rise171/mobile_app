@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+    <group>
+        <item
+            android:id="@+id/tests"
+            android:icon="@drawable/icon_tests"
+            android:title="@string/menu_tests"/>
+        <item
+            android:id="@+id/archive"
+            android:icon="@drawable/icon_archive"
+            android:title="@string/menu_archive" />
+        <item
+            android:id="@+id/emotion_diary"
+            android:icon="@drawable/icon_emotion_diary"
+            android:title="@string/menu_emotion"/>
+        <item
+            android:id="@+id/diary_thoughts"
+            android:icon="@drawable/icon_diary_thoughts"
+            android:title="@string/menu_thoughts"/>
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/icon_settings"
+            android:title="@string/menu_settings"/>
+    </group>
+</menu>

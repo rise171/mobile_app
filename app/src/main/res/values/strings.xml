@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">NOVA</string>
+    <string name="sign_in_button">Зарегистрироваться</string>
+    <string name="in">Войти</string>
+    <string name="greetings">Вы успешно зарегистрировались! Давайте познакомимся поближе. Как вас зовут?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_nav">NavActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_tests">Тестирования</string>
+    <string name="menu_archive">Советы и статьи</string>
+    <string name="menu_emotion">Дневник настроения</string>
+    <string name="menu_thoughts">Дневник мыслей</string>
+    <string name="menu_settings">Настройки</string>
+</resources>

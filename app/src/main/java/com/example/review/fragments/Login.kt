@@ -1,4 +1,4 @@
-package com.example.review.auth_system
+package com.example.review.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -19,11 +19,11 @@ class LoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.sign_in, container, false)
+        val view = inflater.inflate(R.layout.login_fragment, container, false)
 
-        val emailInput = view.findViewById<EditText>(R.id.loginEmail)
-        val passwordInput = view.findViewById<EditText>(R.id.loginPassword)
-        val loginButton = view.findViewById<Button>(R.id.button_login)
+        val emailInput = view.findViewById<EditText>(R.id.email_login)
+        val passwordInput = view.findViewById<EditText>(R.id.password_login)
+        val loginButton = view.findViewById<Button>(R.id.btn_login)
         val registerText = view.findViewById<TextView>(R.id.transitionText)
 
         loginButton.setOnClickListener {
@@ -33,7 +33,7 @@ class LoginFragment : Fragment() {
             AuthUtils.loginUser(email, password, requireContext()) { success, error ->
                 if (success) {
                     Toast.makeText(requireContext(), "Вход выполнен", Toast.LENGTH_LONG).show()
-                    findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+                    //findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
                 } else {
                     Toast.makeText(requireContext(), error ?: "Ошибка входа", Toast.LENGTH_LONG).show()
                 }
@@ -41,7 +41,7 @@ class LoginFragment : Fragment() {
         }
 
         registerText.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+            //findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
         }
 
         return view

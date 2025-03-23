@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_main"
-    tools:context=".auth_system.Login" >
+    tools:context=".fragments.Login" >
 
     <TextView
         android:id="@+id/textView_title"
@@ -41,7 +41,7 @@
         android:layout_width="409dp"
         android:layout_height="640dp"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/app_navigation"
+        app:navGraph="@navigation/nav_graph"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="90dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

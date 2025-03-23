@@ -1,8 +1,7 @@
 package com.example.review.models
 
-data class AuthUser(
+data class UserAccount(
     val userId: String = "",
-    val email: String = "",
     val username: String = "",
-    val token: String? = null
+    val email: String = ""
 )

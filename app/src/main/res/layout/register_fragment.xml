@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_fon">
+
+    <!-- ViewFlipper для переключения между экранами -->
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Первый экран -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/titleView_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="Добро\nпожаловать!"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+            <EditText
+                android:id="@+id/reg_email"
+                android:layout_width="250dp"
+                android:layout_height="52dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/input_register"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/reg_password"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@drawable/input_register"
+                android:hint="Пароль"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColorHint="@color/black" />
+
+            <Button
+                android:id="@+id/btn_reg"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_login"
+                android:text="Зарегистрироваться"
+                android:textAllCaps="false"
+                android:layout_margin="15dp"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Уже зарегистрировались?"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/transitionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Войти"
+                    android:textColor="@color/violetButton"
+                    android:textSize="14sp"
+                    android:paddingStart="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Второй экран -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Вы успешно\nзарегистрировались!"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Введите ваше имя, чтобы мы могли познакомиться."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/input_username"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:background="@drawable/input_register"
+                android:hint="Введите ваш ник"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_to_main"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_login"
+                android:text="Продолжить"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </ViewFlipper>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.228" />
 
     <EditText
-        android:id="@+id/email_signup"
+        android:id="@+id/email_login"
         android:layout_width="250dp"
         android:layout_height="48dp"
         android:background="@drawable/input_register"
@@ -39,7 +39,7 @@
         app:layout_constraintVertical_bias="0.116" />
 
     <EditText
-        android:id="@+id/password_signup"
+        android:id="@+id/password_login"
         android:layout_width="250dp"
         android:layout_height="48dp"
         android:background="@drawable/input_register"
@@ -52,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_signup"
+        app:layout_constraintTop_toBottomOf="@+id/email_login"
         app:layout_constraintVertical_bias="0.071" />
 
     <TextView
@@ -65,12 +65,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.022"
-        app:layout_constraintStart_toStartOf="@+id/password_signup"
+        app:layout_constraintStart_toStartOf="@+id/password_login"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.543" />
 
     <Button
-        android:id="@+id/btn_autorization"
+        android:id="@+id/btn_login"
         android:layout_width="250dp"
         android:layout_height="48dp"
         android:background="@drawable/button_login"
@@ -99,7 +99,7 @@
         app:layout_constraintVertical_bias="0.57" />
 
     <TextView
-        android:id="@+id/textView_signup"
+        android:id="@+id/transitionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Зарегистрироваться"

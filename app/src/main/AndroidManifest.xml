@@ -18,7 +18,7 @@
             android:label="@string/title_activity_nav"
             android:theme="@style/Theme.Review.NoActionBar" />
         <activity
-            android:name=".auth_system.Login"
+            android:name=".fragments.Login"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -28,10 +28,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".auth_system.SignUp"
+            android:name=".fragments.SignUp"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".auth_system.Create_UserName"
+            android:name=".fragments.Create_UserName"
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
